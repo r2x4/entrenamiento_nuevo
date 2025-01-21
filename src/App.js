@@ -1,4 +1,5 @@
 import React from 'react';
+import inicio from 'Inicio';
 import './CSS/App.css';
 
 function App() {
