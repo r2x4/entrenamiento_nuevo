@@ -1,3 +1,4 @@
+// src/Componentes/inicio.js
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../CSS/inicio.css';
@@ -8,7 +9,6 @@ const Inicio = () => {
     const [password, setPassword] = useState('');
     const [recordar, setRecordar] = useState(false);
 
-    // Cargar usuario y contraseña
     useEffect(() => {
         const savedUser = localStorage.getItem('usuario');
         const savedPassword = localStorage.getItem('password');
@@ -61,7 +61,7 @@ const Inicio = () => {
 
     return (
         <div className="inicio-container">
-            <h1 className="main-title">Sport Five Tienda Deportiva</h1>
+            <h1 className="main-title">Ciberseguridad</h1>
             <section className="right-form">
                 <h2>Ingreso Login</h2>
                 <form onSubmit={handleSubmit}>

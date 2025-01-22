@@ -1,0 +1,111 @@
+/* -------------------------- General -------------------------- */
+.main-content {
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+}
+
+/* -------------------------- Header -------------------------- */
+.header {
+    background-color: #44b670;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h6 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* -------------------------- Sección de Mercancías Peligrosas -------------------------- */
+.top-products {
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* -------------------------- Tarjetas de Mercancías -------------------------- */
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Card individual */
+.product-card {
+    position: relative;
+    border: 1px solid #f9f6f6;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #c9ecc3;
+    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1); /* Añadido para mayor profundidad */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border: #121113;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b0a0a;
+    margin-top: 10px;
+}
+
+.btn-details {
+    background-color: #44b670;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn-details:hover {
+    background-color: #8d88f3;
+}
+
+/* -------------------------- Estilos para dispositivos pequeños -------------------------- */
+@media (max-width: 768px) {
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+}

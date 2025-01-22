@@ -1,0 +1,31 @@
+/* Estilos básicos para el header */
+.header {
+    background-color: #44b670;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centra el título */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  /* Título */
+  .header .header-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Media Queries para pantallas pequeñas (hasta 768px) */
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 20px;
+    }
+  
+    .header .header-title {
+      font-size: 1.5rem;
+    }
+  }
+  

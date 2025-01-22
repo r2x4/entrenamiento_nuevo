@@ -1,15 +1,19 @@
+// src/index.js (con React 18 y posterior)
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './CSS/index.css';
-import App from './App';
+import ReactDOM from 'react-dom/client';  // Cambiar la importación
+import './CSS/inicio.css';  // Si tienes un archivo de estilos globales
+import { BrowserRouter } from 'react-router-dom';  // Asegúrate de importar BrowserRouter
+import App from './App';  // Importa App
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));  // Usar createRoot en lugar de render
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>  {/* Envuelve App con BrowserRouter */}
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
+
+
+
 
 
 

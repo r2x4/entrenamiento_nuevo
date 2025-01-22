@@ -1,21 +1,29 @@
+// src/App.js
 import React from 'react';
-import inicio from 'Inicio';
-import './CSS/App.css';
+import { Routes, Route } from 'react-router-dom';
+import Inicio from './Componentes/inicio';
+import CrearCuenta from './Componentes/crearCuenta';
+import ClasesMercancias from './Componentes/clasesMercancias';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Juego</h1>
-        <p>
-          ¡Bienvenido a la aplicación de Entrenamiento!
-        </p>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/crear-cuenta" element={<CrearCuenta />} />
+          <Route path="/productos" element={<ClasesMercancias />} /> {/* Ruta para productos */}
+        </Routes>
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
+
 
 
 

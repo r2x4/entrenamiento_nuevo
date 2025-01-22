@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Usar las varibles_CSS optimizan el trabajo "OJO" */
+:root{
+    --color-primario: #0f0e0e;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat:'Monsetrrat', sans serif;
+    --fuente-krona:'Krona", sans serif';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ /* Body cuerpo del proyecto */
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
 /* Estilos generales para el contenedor */
 .inicio-container {
     height: 100vh; 
@@ -5,44 +29,47 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    background-image: url('../ImagenesLogo/Fondo2.jpg'); 
-    background-size: cover; 
+    background-image: url('../Imagenes/ciberseguridad.jpg'); 
+    background-size: cover;
     background-position: center center; 
     background-repeat: no-repeat; 
-    position: relative; 
+    position: relative;
 }
 
 /* Estilo para el título principal en la parte superior */
 .main-title {
     font-size: 3rem; 
-    color: rgb(247, 243, 243); 
+    color: var(--color-secundario); 
     font-weight: bold;
     position: absolute; 
-    top: 30px; 
+    top: 70px; 
     left: 50%;
     transform: translateX(-50%); 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    text-shadow: 3px 4px 6px var(--color-primario); 
     z-index: 10; 
+    font-family: var(--fuente-montserrat);
 }
 
 /* Estilos del formulario de ingreso */
 .right-form {
-    background-color: rgba(191, 192, 250, 0.8); 
-    padding: 30px;
-    border-radius: 10px;
-    width: 100%;
+    background-color: rgba(110, 112, 250, 0.8); 
+    padding: 4% 1%;
+    border-radius: 15px;
+    width: 50%;
     max-width: 400px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px var(--color-primario); 
     z-index: 5; 
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: center;
+    gap: 20px; 
 }
 
 /* Títulos y textos */
 h2 {
     text-align: center;
     font-size: 20px;
+    font-family: var(--fuente-montserrat);
     margin-bottom: 20px;
 }
 
@@ -52,7 +79,7 @@ label {
     margin-bottom: 5px;
     display: block;
     text-align: left; 
-    width: 100%; 
+    width: 50%; 
     margin-left: 0; 
 }
 
@@ -102,7 +129,7 @@ input[type="checkbox"]:checked {
 }
 
 .button-direction:hover, .create-account-btn:hover {
-    background-color: #44b670;
+    background-color: #0951af;
 }
 
 /* Centrado del texto */
@@ -111,7 +138,7 @@ p {
 }
 
 a {
-    color: #f30202;
+    color: #d30303;
     text-decoration: none;
 }
 
@@ -133,20 +160,20 @@ a {
 }
 
 /* Media Query para dispositivos móviles (menores a 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .main-title {
-        font-size: 2.5rem; 
-        top: 20px; 
+        font-size: 2rem; 
+        top: 5px; 
     }
 
     .right-form {
-        max-width: 90%; 
-        padding: 20px; 
+        max-width: 80%; 
+        padding: 10px; 
     }
 
     input[type="text"], input[type="password"], .button-direction, .create-account-btn {
         width: 100%; 
-        padding: 12px 0; 
+        padding: 10px 0; 
     }
 
     label {
