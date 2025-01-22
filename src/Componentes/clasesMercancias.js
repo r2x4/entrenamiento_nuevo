@@ -7,9 +7,9 @@ const images = {
     mercancia2: require('../Imagenes/clase #2/Clase2.png'),
     mercancia3: require('../Imagenes/clase #3/clase3.jpg'),
     mercancia4: require('../Imagenes/clase #4/clase4.jpg'),
-    mercancia5: require('../Imagenes/clase #1/explosivos.png'),
-    mercancia6: require('../Imagenes/clase #1/explosivos.png'),
-    mercancia7: require('../Imagenes/clase #1/explosivos.png'),
+    mercancia5: require('../Imagenes/clase #5/clase5.jpg'),
+    mercancia6: require('../Imagenes/clase #6/clase6.jpg'),
+    mercancia7: require('../Imagenes/clase #7/clase7.jpg'),
     mercancia8: require('../Imagenes/clase #8/clase8.jpg'),
     mercancia9: require('../Imagenes/clase #9/clase9.jpg'),
 };
