@@ -4,7 +4,7 @@
     padding: 20px 40px;
     color: white;
     display: flex;
-    justify-content: center; /* Centra el título */
+    justify-content: center; 
     align-items: center;
     font-family: Arial, sans-serif;
     flex-wrap: wrap;
